@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  server:
+    build: ./
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "8000:8000"
+      - "443:443"
